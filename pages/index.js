@@ -176,13 +176,13 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="https://twitter.com/kboytron" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @craftzdog (日本語)
+                @kboytron
               </Button>
             </Link>
           </ListItem>
@@ -215,26 +215,6 @@ const Home = () => (
             A Markdown note-taking app
           </GridItem>
         </SimpleGrid>
-
-        <Heading as="h3" variant="section-title">
-          Newsletter
-        </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p>
-
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-            Sign up my newsletter here
-          </Button>
-        </Box>
       </Section>
     </Container>
   </Layout>

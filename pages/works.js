@@ -6,10 +6,11 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
 import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
+import jobao from '../public/images/works/jobao.png'
 import thumbMaxi from '../public/images/works/maxi.png'
 import sev from '../public/images/works/sev.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
+import linkbox from '../public/images/works/linkbox.png'
+import flRecords from '../public/images/works/flRecords.jpg'
 
 const Works = () => (
   <Layout title="Works">
@@ -46,9 +47,8 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+          <WorkGridItem id="jobAppOptimizer" thumbnail={jobao} title="JobApp Optimizer">
+          Streamlines job search by collecting, processing and scheduling listings.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -91,8 +91,13 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
-          <WorkGridItem id="linkbox" thumbnail={thumbPichu2} title="Linkbox">
+          <WorkGridItem id="linkbox" thumbnail={linkbox} title="Linkbox">
             LinkTree like page with animated background
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.5}>
+          <WorkGridItem id="flightRecords" thumbnail={flRecords} title="Flight Records">
+          An efficient data querying tool leveraging sets and maps to handle large-scale flight data with high performance
           </WorkGridItem>
         </Section>
       </SimpleGrid>
