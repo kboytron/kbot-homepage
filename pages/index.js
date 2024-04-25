@@ -73,26 +73,11 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
+          Karan is a Computer Science Student from Atlanta, Georgia, with a
+          passion for building digital services/products that he wants. He has a knack
+          for leveraging technology to create impactful solutions. As a Student, he is deeply engaged
+          in his coursework and constantly seeking out challenges to sharpen his skills.When not online,
+          he loves hanging out outside.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -116,18 +101,13 @@ const Home = () => (
           Born in Mumbai, India.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2023</BioYear>
+          Worked as an intern at Maxi
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>2020 to present</BioYear>
+          Studying Computer Science at the University of
+          Iowa
         </BioSection>
       </Section>
 
@@ -136,15 +116,8 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          Basketball, Football, Weightlifting,
+          Stock Trading
         </Paragraph>
       </Section>
 

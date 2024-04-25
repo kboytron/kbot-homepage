@@ -21,34 +21,14 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
-          >
-            Music recommendation app for iOS
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
-          >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+          <WorkGridItem id="IncomeParser" title="IncomeParser" thumbnail={thumbInkdrop}>
+            Automates accounting by parsing statements from popular payment apps, facilitating
+            data-driven decisions.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
           <WorkGridItem id="jobAppOptimizer" thumbnail={jobao} title="JobApp Optimizer">
-          Streamlines job search by collecting, processing and scheduling listings.
+            Streamlines job search by collecting, processing and scheduling listings.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -64,9 +44,9 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
           <WorkGridItem id="Maxi" thumbnail={thumbMaxi} title="Maxi">
-          A goal setting, productivity, and mental reprogramming tool 
-          with AI-powered voice assistant to level you up in every area 
-          of your life.
+            A goal setting, productivity, and mental reprogramming tool
+            with AI-powered voice assistant to level you up in every area
+            of your life.
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
@@ -75,7 +55,7 @@ const Works = () => (
             thumbnail={sev}
             title="SolarEnergyViz.tech"
           >
-            Illuminating the benefits of solar energy through data-driven insights 
+            Illuminating the benefits of solar energy through data-driven insights
             on panel efficiency and profitability.
           </WorkGridItem>
         </Section>
@@ -97,7 +77,7 @@ const Works = () => (
         </Section>
         <Section delay={0.5}>
           <WorkGridItem id="flightRecords" thumbnail={flRecords} title="Flight Records">
-          An efficient data querying tool leveraging sets and maps to handle large-scale flight data with high performance
+            An efficient data querying tool leveraging sets and maps to handle large-scale flight data with high performance
           </WorkGridItem>
         </Section>
       </SimpleGrid>
