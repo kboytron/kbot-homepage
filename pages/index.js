@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import NextLink from 'next/link'
 import {
   Link,
@@ -16,9 +17,8 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+// import thumbYouTube from '../public/images/links/youtube.png'
 import Image from 'next/image'
 
 const Home = () => (
@@ -40,7 +40,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Karan Singh
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Digital Entreprenuer ( Coder / Salesman / Innovator )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -74,10 +74,11 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Karan is a Computer Science Student from Atlanta, Georgia, with a
-          passion for building digital services/products that he wants. He has a knack
-          for leveraging technology to create impactful solutions. As a Student, he is deeply engaged
-          in his coursework and constantly seeking out challenges to sharpen his skills.When not online,
-          he loves hanging out outside.
+          passion for building digital services/products. He has a knack
+          for leveraging technology to create impactful solutions. As a student, he is deeply engaged
+          in his coursework and constantly seeking out challenges to sharpen his skills. Outside of school, 
+          he manages an online store where he generates and sells items in many different video games.
+          When not online, he loves playing Basketball, Football and Weightlifting.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -87,18 +88,18 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My portfolio
+            My Portfolio
           </Button>
         </Box>
       </Section>
 
-      <Section delay={0.2}>
+      {/* <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         <BioSection>
           <BioYear>2002</BioYear>
-          Born in Mumbai, India.
+          Born in Mumbai, India
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
@@ -109,7 +110,7 @@ const Home = () => (
           Studying Computer Science at the University of
           Iowa
         </BioSection>
-      </Section>
+      </Section> */}
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -137,14 +138,14 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+          {/* <ListItem>
+            <Link href="https://twitter.com/mutcoingang" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @inkdrop_app (English)
+                @mutcoingang
               </Button>
             </Link>
           </ListItem>
@@ -158,36 +159,36 @@ const Home = () => (
                 @kboytron
               </Button>
             </Link>
-          </ListItem>
+          </ListItem> */}
           <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="https://www.linkedin.com/in/karansingh2/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
+                leftIcon={<IoLogoLinkedin />}
               >
-                @craftzdog
+                @karansingh2
               </Button>
             </Link>
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
+            href="https://www.youtube.com/kboytron"
+            title="lboytron"
             thumbnail={thumbYouTube}
           >
-            My YouTube channel (&gt;150k subs)
+            My YouTube channel
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
+            href="https://www.google.com/"
             title="Inkdrop"
             thumbnail={thumbInkdrop}
           >
-            A Markdown note-taking app
+            hi
           </GridItem>
-        </SimpleGrid>
+        </SimpleGrid> */}
       </Section>
     </Container>
   </Layout>

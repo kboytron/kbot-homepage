@@ -16,10 +16,10 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="amembo">
+  <Layout title="IncomeParser">
     <Container>
       <Title>
-        amembo <Badge>2005-2008</Badge>
+        IncomeParser <Badge>2024-Present</Badge>
       </Title>
       <Center my={6}>
         <Image src="/images/works/amembo_icon.png" alt="icon" />

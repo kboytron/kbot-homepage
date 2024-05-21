@@ -3,9 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
+import thumbIncome from '../public/images/works/IncomeParser.png'
 import jobao from '../public/images/works/jobao.png'
 import thumbMaxi from '../public/images/works/maxi.png'
 import sev from '../public/images/works/sev.png'
@@ -18,19 +16,28 @@ const Works = () => (
       <Heading as="h3" fontSize={20} mb={4}>
         Works
       </Heading>
+    <Heading as="h3" fontSize={20} mb={4}>
+        Featured
+      </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <Section delay={0.3}>
+          <WorkGridItem
+            id="solarenergyviz"
+            thumbnail={sev}
+            title="SolarEnergyViz.tech"
+          >
+            Illuminating the benefits of solar energy through data-driven insights
+            on panel efficiency and profitability.
+          </WorkGridItem>
+        </Section>
         <Section>
-          <WorkGridItem id="IncomeParser" title="IncomeParser" thumbnail={thumbInkdrop}>
+          <WorkGridItem id="IncomeParser" title="IncomeParser" thumbnail={thumbIncome}>
             Automates accounting by parsing statements from popular payment apps, facilitating
             data-driven decisions.
           </WorkGridItem>
         </Section>
-        <Section delay={0.1}>
-          <WorkGridItem id="jobAppOptimizer" thumbnail={jobao} title="JobApp Optimizer">
-            Streamlines job search by collecting, processing and scheduling listings.
-          </WorkGridItem>
-        </Section>
+
       </SimpleGrid>
 
       <Section delay={0.2}>
@@ -49,27 +56,24 @@ const Works = () => (
             of your life.
           </WorkGridItem>
         </Section>
-        <Section delay={0.3}>
-          <WorkGridItem
-            id="solarenergyviz"
-            thumbnail={sev}
-            title="SolarEnergyViz.tech"
-          >
-            Illuminating the benefits of solar energy through data-driven insights
-            on panel efficiency and profitability.
-          </WorkGridItem>
-        </Section>
+
       </SimpleGrid>
 
       <Section delay={0.4}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Old works
+          Other works
         </Heading>
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        
+        <Section delay={0.5}>
+          <WorkGridItem id="jobAppOptimizer" thumbnail={jobao} title="JobAppOptimizer">
+            Streamlines job search by collecting, processing and scheduling listings.
+          </WorkGridItem>
+        </Section>
         <Section delay={0.5}>
           <WorkGridItem id="linkbox" thumbnail={linkbox} title="Linkbox">
             LinkTree like page with animated background

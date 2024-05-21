@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
-import { DogSpinner, DogContainer } from './voxel-dog-loader'
+import { DogSpinner, DogContainer } from './coin-loader'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -12,7 +12,7 @@ const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb'
+  const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://kboytron.global.ssl.fastly.net/homepage' : '') + '/coin.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -49,6 +49,10 @@ const VoxelDog = () => {
         10,
         20 * Math.cos(0.2 * Math.PI)
       )
+    
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+      directionalLight.position.set(0, 20, 10);
+      scene.add(directionalLight);
 
       // 640 -> 240
       // 8   -> 6
@@ -74,7 +78,10 @@ const VoxelDog = () => {
       loadGLTFModel(scene, urlDogGLB, {
         receiveShadow: false,
         castShadow: false
-      }).then(() => {
+      }).then(obj => {
+        const box = new THREE.Box3().setFromObject(obj);
+        const center = box.getCenter(new THREE.Vector3());
+        controls.target.set(center.x, center.y, center.z);
         animate()
         setLoading(false)
       })
@@ -97,6 +104,7 @@ const VoxelDog = () => {
             p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
           camera.lookAt(target)
         } else {
+          controls.autoRotateSpeed = (frame / 120) * 10;
           controls.update()
         }
 
@@ -116,6 +124,7 @@ const VoxelDog = () => {
     return () => {
       window.removeEventListener('resize', handleWindowResize, false)
     }
+    
   }, [handleWindowResize])
 
   return (
