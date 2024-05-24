@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {
   Container,
   Badge,
@@ -8,7 +9,6 @@ import {
   UnorderedList,
   Heading,
   Center,
-  Image
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -21,58 +21,32 @@ const Work = () => (
       <Title>
         IncomeParser <Badge>2024-Present</Badge>
       </Title>
-      <Center my={6}>
-        <Image src="/images/works/amembo_icon.png" alt="icon" />
-      </Center>
       <P>
-        P2P private file sharing tool with MSN Messenger integration for Windows
+        Automated accounting using python to parse statements from PayPal, CashApp, Venmo, etc.
       </P>
       <P>
-        「MSN Messenger」と連係して特定ユーザーとP2Pフォルダ共有できる「Amembo」
+        A key player in the operations of my coin-selling operation.
       </P>
       <UnorderedList ml={4} my={4}>
-        <ListItem>ファイル転送がサイズ制限無く高速に出来ます。</ListItem>
-        <ListItem>複数のコンピュータ間で同時に通信が出来ます。</ListItem>
+        <ListItem>Takes in PDF Files provided by payment provider</ListItem>
+        <ListItem>Stores relevant transactions in CSV</ListItem>
         <ListItem>
-          簡単接続機能により、面倒な接続作業を自動で行います。
+          User is free to do any analysis they desire inside of the CSV output
         </ListItem>
         <ListItem>
-          一つのポート開放だけで、様々な通信が出来る強力なプロトコル。
-        </ListItem>
-        <ListItem>
-          IM機能を装備しています。会話中に写真を表示したりもできます。
-        </ListItem>
-        <ListItem>
-          ファイル共有機能で、設定した公開フォルダを相手に見せることが出来ます。
-        </ListItem>
-        <ListItem>MSN/Windowsメッセンジャーからの招待で接続できます。</ListItem>
-        <ListItem>
-          画面転送機能で、相手に自分のデスクトップを見せることが出来ます。
+          Further automation ideas are to get statements from API, 
+          and to update the data automatically every month
         </ListItem>
       </UnorderedList>
 
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Platform</Meta>
-          <span>Windows 2000/XP</span>
-        </ListItem>
-        <ListItem>
           <Meta>Stack</Meta>
-          <span>Delphi</span>
+          <span>Python</span>
         </ListItem>
         <ListItem>
-          <Meta>Download</Meta>
-          <Link href="http://odoruinu.net.s3.amazonaws.com/software/amembo/amembo0515123.zip">
-            v0.5.15.123
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Meta>Last update</Meta>
-          <span>2008/03/23</span>
-        </ListItem>
-        <ListItem>
-          <Meta>Manual</Meta>
-          <Link href="https://w.atwiki.jp/amembo/">使い方wiki</Link>
+          <Meta>Source</Meta>
+          <span>Coming Soon!</span>
         </ListItem>
       </List>
 
@@ -80,7 +54,7 @@ const Work = () => (
         <Center>Media coverage</Center>
       </Heading>
 
-      <UnorderedList my={4}>
+      {/* <UnorderedList my={4}>
         <ListItem>
           <Link href="https://forest.watch.impress.co.jp/article/2006/01/18/amembo.html">
             <Badge mr={2}>窓の杜</Badge>
@@ -96,7 +70,7 @@ const Work = () => (
         <WorkImage src="/images/works/amembo_02.gif" alt="amembo" />
       </SimpleGrid>
       <WorkImage src="/images/works/amembo_03.jpg" alt="amembo" />
-      <WorkImage src="/images/works/amembo_04.jpg" alt="amembo" />
+      <WorkImage src="/images/works/amembo_04.jpg" alt="amembo" /> */}
     </Container>
   </Layout>
 )

@@ -78,7 +78,7 @@ const Home = () => (
           for leveraging technology to create impactful solutions. As a student, he is deeply engaged
           in his coursework and constantly seeking out challenges to sharpen his skills. Outside of school, 
           he manages an online store where he generates and sells items in many different video games.
-          When not online, he loves playing Basketball, Football and Weightlifting.
+          When not online, he loves playing basketball, football, and weightlifting.
         </Paragraph>
         <Box align="center" my={4}>
           <Button

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {
   Container,
   Badge,
@@ -14,28 +15,28 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="pichu*pichu">
+  <Layout title="LinkBox">
     <Container>
       <Title>
-        pichu*pichu <Badge>2010</Badge>
+        LinkBox <Badge>2023</Badge>
       </Title>
       <P>
-        A Twitter client app for iPhone Safari, made in the iPhone 3GS era. I
-        built it for my research work at a graduate school. Got over 2,000
-        users.
+        A Linktree type website featuring an animated background
       </P>
 
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Platform</Meta>
-          <span>iPhone Safari</span>
+          <Meta>Stack</Meta>
+          <span>HTML, CSS, Vanta.js</span>
         </ListItem>
         <ListItem>
-          <Meta>Stack</Meta>
-          <span>PHP, jQuery, MySQL</span>
+          <Meta>Source</Meta>
+          <Link href="https://github.com/kboytron/LinkBox">
+          github.com/kboytron/LinkBox
+          </Link>
         </ListItem>
       </List>
-
+{/* 
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Media coverage</Center>
       </Heading>
@@ -59,7 +60,7 @@ const Work = () => (
       </UnorderedList>
 
       <WorkImage src="/images/works/pichu2_eyecatch.png" alt="Pichu*Pichu" />
-      <WorkImage src="/images/works/pichu2_01.png" alt="Pichu*Pichu" />
+      <WorkImage src="/images/works/pichu2_01.png" alt="Pichu*Pichu" /> */}
     </Container>
   </Layout>
 )

@@ -7,10 +7,10 @@ import {
   UnorderedList,
   Heading,
   Center,
-  // Image
+  //Image
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+// import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
@@ -63,7 +63,7 @@ const Work = () => (
         <ListItem>
           {/* <Link href="https://forest.watch.impress.co.jp/article/2005/02/01/freedbtagger.html"> */}
             <Badge mr={2}>Best Data Visualization</Badge>
-            <ExternalLinkIcon mx="2px" />
+            <span>Sponsored by Leepfrog</span>
           {/* </Link> */}
         </ListItem>
       </UnorderedList>

@@ -8,7 +8,7 @@ function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
 
-const VoxelDog = () => {
+const Coin = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
@@ -22,12 +22,10 @@ const VoxelDog = () => {
     if (container && renderer) {
       const scW = container.clientWidth
       const scH = container.clientHeight
-
       renderer.setSize(scW, scH)
     }
   }, [])
 
-  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     const { current: container } = refContainer
     if (container) {
@@ -43,6 +41,7 @@ const VoxelDog = () => {
       renderer.outputEncoding = THREE.sRGBEncoding
       container.appendChild(renderer.domElement)
       refRenderer.current = renderer
+
       const scene = new THREE.Scene()
 
       const target = new THREE.Vector3(-0.5, 1.2, 0)
@@ -51,13 +50,11 @@ const VoxelDog = () => {
         10,
         20 * Math.cos(0.2 * Math.PI)
       )
-    
-      const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-      directionalLight.position.set(0, 20, 10);
-      scene.add(directionalLight);
 
-      // 640 -> 240
-      // 8   -> 6
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8)
+      directionalLight.position.set(0, 20, 10)
+      scene.add(directionalLight)
+
       const scale = scH * 0.005 + 4.8
       const camera = new THREE.OrthographicCamera(
         -scale,
@@ -81,9 +78,9 @@ const VoxelDog = () => {
         receiveShadow: false,
         castShadow: false
       }).then(obj => {
-        const box = new THREE.Box3().setFromObject(obj);
-        const center = box.getCenter(new THREE.Vector3());
-        controls.target.set(center.x, center.y, center.z);
+        const box = new THREE.Box3().setFromObject(obj)
+        const center = box.getCenter(new THREE.Vector3())
+        controls.target.set(center.x, center.y, center.z)
         animate()
         setLoading(false)
       })
@@ -106,12 +103,14 @@ const VoxelDog = () => {
             p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
           camera.lookAt(target)
         } else {
-          controls.autoRotateSpeed = (frame / 120) * 10;
+          controls.autoRotateSpeed = (frame / 120) * 10
           controls.update()
         }
 
         renderer.render(scene, camera)
       }
+
+      animate()
 
       return () => {
         cancelAnimationFrame(req)
@@ -119,19 +118,20 @@ const VoxelDog = () => {
         renderer.dispose()
       }
     }
-  }, [])
+  }, [urlDogGLB])
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize, false)
     return () => {
       window.removeEventListener('resize', handleWindowResize, false)
     }
-    
   }, [handleWindowResize])
 
   return (
-    <DogContainer ref={refContainer}>{loading && <DogSpinner />}</DogContainer>
+    <DogContainer ref={refContainer}>
+      {loading && <DogSpinner />}
+    </DogContainer>
   )
 }
 
-export default VoxelDog
+export default Coin
