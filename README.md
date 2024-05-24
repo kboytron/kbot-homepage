@@ -1,6 +1,6 @@
 # Karan's Homepage
 
-[https://www.craftz.dog/](https://www.craftz.dog/)
+[https://www.kboytron.dev/](https://www.kbotron.dev/)
 
 ## Stack
 
