@@ -16,7 +16,8 @@ const Works = () => (
         Works
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-      <Section delay={0.3}>
+        
+        <Section delay={0.3}>
           <WorkGridItem
             id="solarenergyviz"
             thumbnail={sev}
@@ -26,6 +27,7 @@ const Works = () => (
             on panel efficiency and profitability.
           </WorkGridItem>
         </Section>
+
         <Section>
           <WorkGridItem id="IncomeParser" title="IncomeParser" thumbnail={thumbIncome}>
             Automates accounting by parsing statements from popular payment apps, facilitating
@@ -33,6 +35,17 @@ const Works = () => (
           </WorkGridItem>
         </Section>
 
+        <Section delay={0.5}>
+          <WorkGridItem id="jobAppOptimizer" thumbnail={jobao} title="JobAppOptimizer">
+            Streamlines job search by collecting, processing and scheduling listings.
+          </WorkGridItem>
+        </Section>
+
+        <Section delay={0.5}>
+          <WorkGridItem id="linkbox" thumbnail={linkbox} title="Linkbox">
+            LinkTree like page with animated background
+          </WorkGridItem>
+        </Section>
       </SimpleGrid>
 
 
@@ -45,17 +58,9 @@ const Works = () => (
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        
-        <Section delay={0.5}>
-          <WorkGridItem id="jobAppOptimizer" thumbnail={jobao} title="JobAppOptimizer">
-            Streamlines job search by collecting, processing and scheduling listings.
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.5}>
-          <WorkGridItem id="linkbox" thumbnail={linkbox} title="Linkbox">
-            LinkTree like page with animated background
-          </WorkGridItem>
-        </Section>
+
+
+
         <Section delay={0.5}>
           <WorkGridItem id="flightRecords" thumbnail={flRecords} title="Flight Records">
             An efficient data querying tool leveraging sets and maps to handle large-scale flight data with high performance
