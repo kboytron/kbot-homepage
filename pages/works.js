@@ -5,7 +5,6 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbIncome from '../public/images/works/IncomeParser.png'
 import jobao from '../public/images/works/jobao.png'
-import thumbMaxi from '../public/images/works/maxi.png'
 import sev from '../public/images/works/sev.png'
 import linkbox from '../public/images/works/linkbox.png'
 import flRecords from '../public/images/works/flRecords.jpg'
@@ -16,10 +15,6 @@ const Works = () => (
       <Heading as="h3" fontSize={20} mb={4}>
         Works
       </Heading>
-    <Heading as="h3" fontSize={20} mb={4}>
-        Featured
-      </Heading>
-
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
       <Section delay={0.3}>
           <WorkGridItem
@@ -40,30 +35,12 @@ const Works = () => (
 
       </SimpleGrid>
 
-      <Section delay={0.2}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.3}>
-          <WorkGridItem id="Maxi" thumbnail={thumbMaxi} title="Maxi">
-            A goal setting, productivity, and mental reprogramming tool
-            with AI-powered voice assistant to level you up in every area
-            of your life.
-          </WorkGridItem>
-        </Section>
-
-      </SimpleGrid>
 
       <Section delay={0.4}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Other works
+          School Projects
         </Heading>
       </Section>
 

@@ -12,7 +12,9 @@ const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://kboytron.global.ssl.fastly.net/homepage' : '') + '/coin.glb'
+  const urlDogGLB = process.env.NODE_ENV === 'production' 
+    ? 'https://kbot-homepage.vercel.app/coin.glb' 
+    : '/coin.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
