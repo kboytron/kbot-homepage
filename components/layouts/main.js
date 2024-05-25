@@ -27,7 +27,7 @@ const Main = ({ children, router }) => {
         <meta property="og:site_name" content="Karan Singh" />
         <meta name="og:title" content="Karan Singh" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.craftz.dog/card.png" />
+        <meta property="og:image" content="https://kbot-homepage.vercel.app/card.png" />
         <title>Karan Singh - Homepage</title>
       </Head>
 
