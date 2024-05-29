@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
-import { DogSpinner, DogContainer } from './coin-loader'
+import { CoinSpinner, CoinContainer } from './coin-loader'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -12,8 +12,8 @@ const Coin = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB = process.env.NODE_ENV === 'production' 
-    ? 'https://kbot-homepage.vercel.app/coin.glb' 
+  const urlCoinGLB = process.env.NODE_ENV === 'production' 
+    ? 'https://d3hndibbbri2s5.cloudfront.net/coin.glb' 
     : '/coin.glb'
 
   const handleWindowResize = useCallback(() => {
@@ -74,7 +74,7 @@ const Coin = () => {
       controls.autoRotate = true
       controls.target = target
 
-      loadGLTFModel(scene, urlDogGLB, {
+      loadGLTFModel(scene, urlCoinGLB, {
         receiveShadow: false,
         castShadow: false
       }).then(obj => {
@@ -118,7 +118,7 @@ const Coin = () => {
         renderer.dispose()
       }
     }
-  }, [urlDogGLB])
+  }, [urlCoinGLB])
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize, false)
@@ -128,9 +128,9 @@ const Coin = () => {
   }, [handleWindowResize])
 
   return (
-    <DogContainer ref={refContainer}>
-      {loading && <DogSpinner />}
-    </DogContainer>
+    <CoinContainer ref={refContainer}>
+      {loading && <CoinSpinner />}
+    </CoinContainer>
   )
 }
 
