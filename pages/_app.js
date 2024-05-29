@@ -26,6 +26,7 @@ function Website({ Component, pageProps, router }) {
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
         <Analytics />
+        <SpeedInsights />
       </Layout>
     </Chakra>
   )
