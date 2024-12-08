@@ -21,7 +21,8 @@ const Work = () => (
         LinkBox <Badge>2023</Badge>
       </Title>
       <P>
-        A Linktree type website featuring an animated background
+        LinkBox is a personal project that serves as a LinkTree-like page with an animated background.
+        It allows me to organize and share my links in a visually appealing and interactive manner.
       </P>
 
       <List ml={4} my={4}>
@@ -32,35 +33,20 @@ const Work = () => (
         <ListItem>
           <Meta>Source</Meta>
           <Link href="https://github.com/kboytron/LinkBox">
-          github.com/kboytron/LinkBox
+            github.com/kboytron/LinkBox <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Meta>Link</Meta>
+          <Link href="https://kboytron.github.io/LinkBox/">
+            kboytron.github.io/LinkBox/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
-{/* 
-      <Heading as="h4" fontSize={16} my={6}>
-        <Center>Media coverage</Center>
-      </Heading>
 
-      <UnorderedList my={4}>
-        <ListItem>
-          <Link href="http://www.donpy.net/standard-entry/app-reiview/4303.html">
-            <Badge mr={2}>覚醒する @CDiP</Badge>
-            Webアプリ版twitterクライアントの「pichu*pichu」が凄い。{' '}
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
-
-        <ListItem>
-          <Link href="http://labs.laurahouse.net/articles/iphone/1115.html">
-            <Badge mr={2}>LauraHouse Labs</Badge>
-            知っておきたいWebアプリ版Twitterクライアント活用法{' '}
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
-      </UnorderedList>
-
-      <WorkImage src="/images/works/pichu2_eyecatch.png" alt="Pichu*Pichu" />
-      <WorkImage src="/images/works/pichu2_01.png" alt="Pichu*Pichu" /> */}
+      <Center my={6}>
+        <WorkImage src="/images/works/linkbox.png" alt="linkbox" />
+      </Center>
     </Container>
   </Layout>
 )

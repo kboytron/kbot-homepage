@@ -19,7 +19,7 @@ const Work = () => (
   <Layout title="IncomeParser">
     <Container>
       <Title>
-        IncomeParser <Badge>2024-Present</Badge>
+        IncomeParser <Badge>2024</Badge>
       </Title>
       <P>
         Automated accounting using python to parse statements from PayPal, CashApp, Venmo, etc.

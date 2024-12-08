@@ -117,7 +117,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Basketball, Football, Weightlifting,
+          My dear Manon, Basketball, Football, Weightlifting,
           Stock Trading
         </Paragraph>
       </Section>

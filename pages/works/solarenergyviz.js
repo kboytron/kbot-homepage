@@ -18,7 +18,7 @@ const Work = () => (
   <Layout title="solarEnergyViz">
     <Container>
       <Title>
-        SolarEnergyViz.tech <Badge>2023-2024</Badge>
+        SolarEnergyViz.tech <Badge>2023</Badge>
       </Title>
       {/* <Center my={6}>
         <Image src="/images/works/freedbtagger_icon.gif" alt="icon" />
