@@ -4,7 +4,6 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbIncome from '../public/images/works/IncomeParser.png'
-import jobao from '../public/images/works/jobao.png'
 import sev from '../public/images/works/sev.png'
 import linkbox from '../public/images/works/linkbox.png'
 import flRecords from '../public/images/works/flRecords.jpg'
@@ -40,11 +39,7 @@ const Works = () => (
             data-driven decisions.
           </WorkGridItem>
         </Section>
-        <Section delay={0.1}>
-          <WorkGridItem id="jobAppOptimizer" thumbnail={jobao} title="JobAppOptimizer">
-            Streamlines job search by collecting, processing and scheduling listings.
-          </WorkGridItem>
-        </Section>
+
         <Section delay={0.1}>
           <WorkGridItem id="linkbox" thumbnail={linkbox} title="Linkbox">
             LinkTree like page with animated background
