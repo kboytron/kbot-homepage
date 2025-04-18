@@ -19,27 +19,24 @@ const Work = () => (
       <Title>
         Tree Plotter <Badge>2024</Badge>
       </Title>
-      <P>
-        Completed as part of the Spring 2024 offering of CS:2630 Computer Organization at the University of Iowa.
-      </P>
-      <br></br>
 
-      <Heading as="h4" fontSize={16} my={6}>
-        <Center>Description</Center>
-      </Heading>
       <P>
-        An assembly language program that recursively plots binary trees using ASCII art. The program automatically 
-        calculates and displays the largest possible tree that will fit in the Hawk emulator&apos;s display window, 
-        using depth-first traversal to draw branches with forward and backward slashes.
+        A recursive assembly program that dynamically plots perfectly scaled binary trees as ASCII art. Utilizing depth-first traversal, it automatically calculates optimal tree dimensions, adjusts branch sizes based on emulator screen constraints, and demonstrates precise control over recursion, geometry, and low-level I/O.
       </P>
 
       <Heading as="h4" fontSize={16} my={6}>
-        <Center>Features</Center>
+        <Center>Key Features</Center>
       </Heading>
       <UnorderedList my={4}>
-        <ListItem>Recursive Drawing: Uses depth-first search to plot branches, with size calculated as 2^n-depth</ListItem>
-        <ListItem>Dynamic Sizing: Automatically determines maximum tree height based on window dimensions</ListItem>
-        <ListItem>Screen Management: Centers output and handles coordinate calculations in assembly</ListItem>
+        <ListItem>
+          <strong>Recursive Traversal:</strong> Implements depth-first recursion to accurately render tree structures, with node widths computed dynamically.
+        </ListItem>
+        <ListItem>
+          <strong>Dynamic Scaling:</strong> Automatically adjusts the size and layout of the binary tree based on the current emulator window dimensions.
+        </ListItem>
+        <ListItem>
+          <strong>Low-Level Rendering:</strong> Directly manages screen coordinates and rendering logic using SMAL assembly for precise positioning and visual clarity.
+        </ListItem>
       </UnorderedList>
 
       <List ml={4} my={4}>
@@ -49,14 +46,14 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="[Link to source code]">
-            [Link to source code] <ExternalLinkIcon mx="2px" />
+          <Link href="https://github.com/kboytron/tree-plotter" isExternal>
+            GitHub <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
 
       <Center my={6}>
-        <WorkImage src="/images/works/mp4.png" alt="treePlotter Thumbnail" />
+        <WorkImage src="/images/works/mp4.png" alt="Tree Plotter Thumbnail" />
       </Center>
     </Container>
   </Layout>

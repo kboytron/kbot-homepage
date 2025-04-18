@@ -1,7 +1,6 @@
 import { forwardRef } from 'react'
 import { Box, Spinner } from '@chakra-ui/react'
 
-// Spinner component for loading animation
 export const CoinSpinner = () => (
   <Spinner
     size="xl"
@@ -9,11 +8,10 @@ export const CoinSpinner = () => (
     left="50%"
     top="50%"
     ml="calc(0px - var(--spinner-size) / 2)"
-    mt="calc(0px - var(--spinner-size) / 2)" // Corrected centering calculation
+    mt="calc(0px - var(--spinner-size) / 2)" 
   />
 )
 
-// Container component for the 3D model with responsive design
 export const CoinContainer = forwardRef(({ children }, ref) => (
   <Box
     ref={ref}
@@ -29,7 +27,6 @@ export const CoinContainer = forwardRef(({ children }, ref) => (
   </Box>
 ))
 
-// Default loader component
 const Loader = () => {
   return (
     <CoinContainer>

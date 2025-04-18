@@ -19,39 +19,41 @@ const Work = () => (
       <Title>
         Dijkstra Duel <Badge>2024</Badge>
       </Title>
-      <P>
-        Completed as part of the Spring 2024 offering of CS:3330 Algorithms at the University of Iowa.
-      </P>
-      <br></br>
 
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Description</Center>
       </Heading>
       <P>
-        An implementation comparing two versions of Dijkstra&apos;s shortest path algorithm: a vanilla version 
-        and an efficient version using a priority queue. The project analyzes performance differences 
-        between the two approaches when finding shortest paths in large graphs, demonstrating the 
-        practical impact of algorithmic optimization.
+        Dijkstra Duel is an interactive web-based tool for comparing two implementations of Dijkstra&apos;s shortest path algorithm:
+        a classic version using linear search and an optimized version using a priority queue. The application visualizes
+        algorithm execution on randomly generated graphs, allowing users to explore performance differences through side-by-side animations.
       </P>
 
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Features</Center>
       </Heading>
       <UnorderedList my={4}>
-        <ListItem>Vanilla Implementation: Classic Dijkstra&apos;s algorithm using linear search for minimum distance vertex</ListItem>
-        <ListItem>Optimized Version: Enhanced implementation utilizing priority queue for efficient vertex selection</ListItem>
-        <ListItem>Performance Analysis: Runtime comparison between both versions with theoretical justification</ListItem>
+        <ListItem><b>Dual Visualization:</b> Displays both algorithms side-by-side with live graph animations.</ListItem>
+        <ListItem><b>Interactive Controls:</b> Adjustable number of nodes (5–25) and animation speed (100–1000 ms).</ListItem>
+        <ListItem><b>Performance Metrics:</b> Real-time runtime and operation counts during execution.</ListItem>
+        <ListItem><b>Shortest Path Tree:</b> Highlights the computed shortest-path tree at the end of each run.</ListItem>
       </UnorderedList>
 
       <List ml={4} my={4}>
+      <ListItem>
+          <Meta>Website</Meta>
+          <Link href="https://dijkstra-duel.vercel.app/">
+            https://dijkstra-duel.vercel.app/ <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Python, Priority Queue</span>
+          <span>Next.js, React.js, JavaScript</span>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="[Link to source code]">
-            [Link to source code] <ExternalLinkIcon mx="2px" />
+          <Link href="https://github.com/kboytron/dijkstra-duel">
+            GitHub <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>

@@ -20,33 +20,35 @@ const Work = () => (
         Simple Chat <Badge>2024</Badge>
       </Title>
       <P>
-        Completed as part of the Spring 2024 offering of CS:3640 Introduction to Networks at the University of Iowa.
-      </P>
-      <br></br>
-
-      <Heading as="h4" fontSize={16} my={6}>
-        <Center>Description</Center>
-      </Heading>
-      <P>
-        A Python-based messaging system implementing a chat client and directory server architecture. 
-        The chat clients communicate with the directory server using TCP to register and lookup users, 
-        while client-to-client messaging is handled through UDP sockets. Messages are encoded in JSON 
-        format for standardized communication between components.
+        A lightweight, Python-based messaging application supporting peer-to-peer communication
+        over UDP with user discovery managed through a centralized TCP-based directory server.
+        The system uses JSON serialization for standardized message exchange and incorporates
+        basic error handling for robust operation.
       </P>
 
       <Heading as="h4" fontSize={16} my={6}>
-        <Center>Features</Center>
+        <Center>Key Features</Center>
       </Heading>
       <UnorderedList my={4}>
-        <ListItem>User Registration: Clients register their username and IP:port with the directory server via TCP</ListItem>
-        <ListItem>Message Exchange: Direct client-to-client communication using UDP sockets</ListItem>
-        <ListItem>Multi-threaded Design: Separate threads for handling incoming messages and user input</ListItem>
+        <ListItem>
+          <strong>User Registration:</strong> Clients register their username and network details
+          with the directory server via TCP.
+        </ListItem>
+        <ListItem>
+          <strong>Peer-to-Peer Messaging:</strong> Direct UDP communication for fast, efficient
+          messaging between users.
+        </ListItem>
+        <ListItem>
+          <strong>Concurrent Operations:</strong> Multi-threaded implementation ensures responsive
+          handling of incoming messages and user inputs.
+        </ListItem>
       </UnorderedList>
 
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Python, socket, threading, JSON</span>
+          <span>Python, Sockets API, Multithreading, JSON</span>
+
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
@@ -57,9 +59,10 @@ const Work = () => (
       </List>
 
       <Center my={6}>
-        <WorkImage src="/images/works/chat.png" alt="simpleChat Thumbnail" />
+        <WorkImage src="/images/works/chat.png" alt="Simple Chat Thumbnail" />
       </Center>
-      <WorkImage src="/images/works/chatArch.png" alt="simpleChat Detail 1" />
+
+      <WorkImage src="/images/works/chatArch.png" alt="Simple Chat Architecture" />
     </Container>
   </Layout>
 )

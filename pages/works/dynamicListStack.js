@@ -14,33 +14,32 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="Dynamic ListStack">
+  <Layout title="ListStack-SMAL">
     <Container>
       <Title>
-        ListStack in Assembly <Badge>2024</Badge>
+        ListStack-SMAL <Badge>2024</Badge>
       </Title>
       <P>
-        Completed as part of the Spring 2024 offering of CS:2630 Computer Organization at the University of Iowa.
-      </P>
-      <br></br>
-
-      <Heading as="h4" fontSize={16} my={6}>
-        <Center>Description</Center>
-      </Heading>
-      <P>
-        An assembly language implementation of a dynamic stack data structure using linked lists. 
-        The project implements memory management with MALLOC and FREE operations, along with 
-        exception handling for stack overflow and underflow conditions. This implementation 
-        serves as part of a larger stack comparison framework running on the Hawk emulator.
+        An assembly-based implementation of a linked-list stack, 
+        featuring dynamic memory management, robust exception handling, 
+        and polymorphic integration within a hybrid stack framework. 
+        Built using SMAL assembly language and the Hawk emulator, 
+        this implementation emphasizes efficient memory operations and error resilience.
       </P>
 
       <Heading as="h4" fontSize={16} my={6}>
-        <Center>Features</Center>
+        <Center>Key Features</Center>
       </Heading>
       <UnorderedList my={4}>
-        <ListItem>Dynamic Memory: Uses MALLOC for node creation during push operations and FREE for cleanup during pop operations</ListItem>
-        <ListItem>Exception Handling: Implements stack overflow and underflow detection with STACKEXCEPT throws</ListItem>
-        <ListItem>Object-Oriented Design: Follows a class-based structure with inheritance from a generic stack interface</ListItem>
+        <ListItem>
+          <strong>Dynamic Memory Allocation:</strong> Efficiently allocates and deallocates memory using MALLOC and FREE during push and pop operations, minimizing memory overhead.
+        </ListItem>
+        <ListItem>
+          <strong>Exception Handling:</strong> Proactively manages errors by detecting and responding to stack overflow and underflow with customized STACKEXCEPT exceptions.
+        </ListItem>
+        <ListItem>
+          <strong>Polymorphic Design:</strong> Seamlessly integrates with array-based stacks using a flexible, object-oriented design approach, promoting modularity and code reuse.
+        </ListItem>
       </UnorderedList>
 
       <List ml={4} my={4}>
@@ -57,7 +56,7 @@ const Work = () => (
       </List>
 
       <Center my={6}>
-        <WorkImage src="/images/works/mp5.png" alt="dynamicListStack Thumbnail" />
+        <WorkImage src="/images/works/mp5.png" alt="ListStack-SMAL Thumbnail" />
       </Center>
     </Container>
   </Layout>

@@ -19,18 +19,14 @@ const Work = () => (
       <Title>
         Scene Painter <Badge>2022</Badge>
       </Title>
-      <P>
-        Completed as part of the Spring 2022 offering of CS:2230 Data Structures at the University of Iowa.
-      </P>
-      <br></br>
 
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Description</Center>
       </Heading>
       <P>
-        A Java graphics system implementing an object-oriented approach to drawing digital scenes. The application 
-        uses the BRIDGES visualization library to render primitive shapes like points, lines, and circles onto a 
-        pixel grid. Each shape is represented as a Mark object that can be added, deleted and modified within a Scene.
+      Scene Painter is a pixel-based drawing tool built in Java using an object-oriented design. 
+      It leverages the BRIDGES visualization library to render shapes like points, lines, and circles on a grid. 
+      Users can dynamically add, layer, and remove shapes using color-coded logic and Bresenham&apos;s algorithms.
       </P>
 
       <Heading as="h4" fontSize={16} my={6}>
@@ -49,8 +45,8 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="[Link to source code]">
-            [Link to source code] <ExternalLinkIcon mx="2px" />
+          <Link href="https://github.com/kboytron/scenePainter">
+            Github <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>

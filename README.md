@@ -1,6 +1,6 @@
 # Karan's Homepage
 
-[https://www.kboytron.dev/](https://www.kbotron.dev/)
+[https://www.kboytron.dev/](https://www.kboytron.dev/)
 
 ## Stack
 

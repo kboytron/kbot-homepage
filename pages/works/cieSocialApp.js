@@ -19,29 +19,22 @@ const Work = () => (
       <Title>
         CIE Social App <Badge>2021</Badge>
       </Title>
-      <P>
-        Completed as part of the Fall 2021 offering of ENGR:2730 Computers in Engineering at the University of Iowa.
-      </P>
-      <br></br>
 
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Description</Center>
       </Heading>
       <P>
-        A C++ social media application featuring user profile management and friend connections. 
-        The application implements object-oriented design with separate Profile and ProfileDatabase 
-        classes to handle user data and relationships. Users can create accounts, update their 
-        status, manage friend connections, and view their social network through an interactive 
-        command-line interface.
+        A command-line social media app built in C++, allowing users to create profiles, post status updates, and manage friend connections. 
+        Implements object-oriented principles for clean and maintainable code.
       </P>
 
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Features</Center>
       </Heading>
       <UnorderedList my={4}>
-        <ListItem>User Authentication: Create, manage, and delete user profiles with unique usernames</ListItem>
-        <ListItem>Social Features: Add/remove friends and update personal status messages</ListItem>
-        <ListItem>Database Management: Maintain user records and relationships using C++ vectors</ListItem>
+        <ListItem>Unique user profiles and authentication</ListItem>
+        <ListItem>Status posting and friend management</ListItem>
+        <ListItem>Simple database handling using C++ vectors</ListItem>
       </UnorderedList>
 
       <List ml={4} my={4}>
@@ -51,8 +44,8 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="[Link to source code]">
-            [Link to source code] <ExternalLinkIcon mx="2px" />
+          <Link href="https://github.com/kboytron/CIESocialApp">
+            Github <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>

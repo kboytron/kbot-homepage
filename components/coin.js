@@ -13,7 +13,7 @@ const Coin = () => {
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
   const urlCoinGLB = process.env.NODE_ENV === 'production' 
-    ? 'https://d3hndibbbri2s5.cloudfront.net/coin.glb' 
+    ? 'https://d3hndibbbri2s5.cloudfront.net  ' 
     : '/coin.glb'
 
   const handleWindowResize = useCallback(() => {
@@ -103,7 +103,7 @@ const Coin = () => {
             p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
           camera.lookAt(target)
         } else {
-          controls.autoRotateSpeed = (frame / 120) * 10
+          controls.autoRotateSpeed = (frame / 120) * 5
           controls.update()
         }
 
