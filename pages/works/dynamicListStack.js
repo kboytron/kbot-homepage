@@ -6,7 +6,8 @@ import {
   ListItem,
   UnorderedList,
   Center,
-  Heading
+  Heading,
+  Image
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -19,6 +20,9 @@ const Work = () => (
       <Title>
         ListStack-SMAL <Badge>2024</Badge>
       </Title>
+      <Center my={6}>
+        <Image src="/images/works/lstack_flow.webp" alt="icon" />
+      </Center>
       <P>
         An assembly-based implementation of a linked-list stack, 
         featuring dynamic memory management, robust exception handling, 
@@ -49,14 +53,14 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="[Link to source code]">
-            [Link to source code] <ExternalLinkIcon mx="2px" />
+          <Link href="https://github.com/kboytron/ListStack-SMAL">
+            Github <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
 
       <Center my={6}>
-        <WorkImage src="/images/works/mp5.png" alt="ListStack-SMAL Thumbnail" />
+        <WorkImage src="/images/works/mp5.webp" alt="ListStack-SMAL Thumbnail" />
       </Center>
     </Container>
   </Layout>

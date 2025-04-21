@@ -59,7 +59,7 @@ const Work = () => (
       </List>
 
       <Center my={6}>
-        <WorkImage src="/images/works/dktrad.png" alt="Dijkstra Duel Thumbnail" />
+        <WorkImage src="/images/works/dd_spt.webp" alt="Dijkstra Duel Thumbnail" />
       </Center>
     </Container>
   </Layout>

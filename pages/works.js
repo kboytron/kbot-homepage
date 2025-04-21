@@ -3,16 +3,18 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import sev from '../public/images/works/sev.png'
-import linkbox from '../public/images/works/linkbox.png'
-import flRecords from '../public/images/works/flRecords.jpg'
-import dkstrad from '../public/images/works/dktrad.png'
-import mp4 from '../public/images/works/tree.png'
-import mp5 from '../public/images/works/liststack.png'
-import scene from '../public/images/works/scene.png'
-import chat from '../public/images/works/simpleChat.png'
-import app from '../public/images/works/cieApp.png'
-import pscrip from '../public/images/works/pscrip.png'
+import sev from '../public/images/works/sev.webp'
+import linkbox from '../public/images/works/linkbox.webp'
+import flRecords from '../public/images/works/flRecords.webp'
+import dkstrad from '../public/images/works/dktrad.webp'
+import mp4 from '../public/images/works/tree.webp'
+import mp5 from '../public/images/works/liststack.webp'
+import scene from '../public/images/works/scene.webp'
+import chat from '../public/images/works/simpleChat.webp'
+import app from '../public/images/works/cieApp.webp'
+import pscrip from '../public/images/works/pscrip.webp'
+import asr from '../public/images/works/asr.webp'
+import mct from '../public/images/works/mct.webp'
 
 const Works = () => (
   <Layout title="Works">
@@ -28,7 +30,7 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem id="mct" thumbnail={mp4} title="MUTCoinTeam">
+          <WorkGridItem id="mct" thumbnail={mct} title="MUTCoinTeam">
           SaaS platform for in-game currency trading with automation and secure backend.
           </WorkGridItem>
         </Section>
@@ -38,7 +40,7 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem id="asr" thumbnail={mp4} title="SpeechServe">
+          <WorkGridItem id="asr" thumbnail={asr} title="SpeechServe">
           End-to-end speech recognition system using CTC and DNN.
           </WorkGridItem>
         </Section>

@@ -6,6 +6,7 @@ import {
   ListItem,
   UnorderedList,
   Center,
+  Image,
   Heading
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
@@ -19,7 +20,9 @@ const Work = () => (
       <Title>
         Tree Plotter <Badge>2024</Badge>
       </Title>
-
+      <Center my={6}>
+        <Image src="/images/works/mp4.webp" alt="icon" />
+      </Center>
       <P>
         A recursive assembly program that dynamically plots perfectly scaled binary trees as ASCII art. Utilizing depth-first traversal, it automatically calculates optimal tree dimensions, adjusts branch sizes based on emulator screen constraints, and demonstrates precise control over recursion, geometry, and low-level I/O.
       </P>
@@ -51,9 +54,8 @@ const Work = () => (
           </Link>
         </ListItem>
       </List>
-
       <Center my={6}>
-        <WorkImage src="/images/works/mp4.png" alt="Tree Plotter Thumbnail" />
+        <WorkImage src="/images/works/tree_rage.webp" alt="Tree Plotter Thumbnail" />
       </Center>
     </Container>
   </Layout>

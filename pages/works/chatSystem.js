@@ -52,17 +52,17 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="[Link to source code]">
-            [Link to source code] <ExternalLinkIcon mx="2px" />
+          <Link href="https://github.com/kboytron/simple_chat">
+            Github <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
 
       <Center my={6}>
-        <WorkImage src="/images/works/chat.png" alt="Simple Chat Thumbnail" />
+        <WorkImage src="/images/works/chat.webp" alt="Simple Chat Thumbnail" />
       </Center>
 
-      <WorkImage src="/images/works/chatArch.png" alt="Simple Chat Architecture" />
+      <WorkImage src="/images/works/chatArch.webp" alt="Simple Chat Architecture" />
     </Container>
   </Layout>
 )

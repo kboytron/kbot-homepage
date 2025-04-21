@@ -6,11 +6,12 @@ import {
   ListItem,
   UnorderedList,
   Center,
+  Image,
   Heading
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
@@ -19,7 +20,9 @@ const Work = () => (
       <Title>
         Flight Records <Badge>2022</Badge>
       </Title>
-
+      <Center my={6}>
+        <Image src="/images/works/flquery.webp" alt="icon" />
+      </Center>
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Description</Center>
       </Heading>
@@ -74,9 +77,6 @@ const Work = () => (
           </Link>
         </ListItem>
       </List>
-      <Center my={6}>
-        <WorkImage src="/images/works/flRecords.jpg" alt="FlightRecords Thumbnail" />
-      </Center>
     </Container>
   </Layout>
 )

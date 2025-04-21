@@ -1,15 +1,14 @@
 import {
     Container,
     Badge,
-    Link,
     List,
     ListItem,
     UnorderedList,
     Center,
-    Heading
+    Heading,
+    Image
   } from '@chakra-ui/react'
   import Layout from '../../components/layouts/article'
-  import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, WorkImage, Meta } from '../../components/work'
   import P from '../../components/paragraph'
   
@@ -19,6 +18,9 @@ import {
         <Title>
           MUTCoinTeam <Badge>2020-Present</Badge>
         </Title>
+              <Center my={6}>
+                <Image src="/images/works/mct_tech.webp" alt="icon" />
+              </Center>
         <P>
           Designed, developed, and scaled an automation-driven SaaS platform for in-game currency trading
           in Madden, generating over $250K in revenue with 250+ highly rated transactions.
@@ -53,18 +55,12 @@ import {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>Python, C++, .NET, Wireshark, REST APIs, Web Automation</span>
-          </ListItem>
-          <ListItem>
-            <Meta>Source</Meta>
-            <Link href="[Link to source or demo, if applicable]">
-              [Link to source or demo] <ExternalLinkIcon mx="2px" />
-            </Link>
+            <span>Python, C++, .NET, Wireshark, Image Detection</span>
           </ListItem>
         </List>
   
         <Center my={6}>
-          <WorkImage src="/images/works/mutcoin.png" alt="MUTCoinTeam Thumbnail" />
+          <WorkImage src="/images/works/mct_reviews.webp" alt="MUTCoinTeam Thumbnail" />
         </Center>
       </Container>
     </Layout>

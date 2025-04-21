@@ -51,7 +51,7 @@ const Work = () => (
       </List>
 
       <Center my={6}>
-        <WorkImage src="/images/works/app.png" alt="CIE Social App Thumbnail" />
+        <WorkImage src="/images/works/app.webp" alt="CIE Social App Thumbnail" />
       </Center>
     </Container>
   </Layout>

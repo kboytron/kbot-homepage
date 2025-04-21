@@ -52,7 +52,7 @@ const Work = () => (
       </List>
 
       <Center my={6}>
-        <WorkImage src="/images/works/scene.png" alt="scenePainter Thumbnail" />
+        <WorkImage src="/images/works/scene.webp" alt="scenePainter Thumbnail" />
       </Center>
     </Container>
   </Layout>

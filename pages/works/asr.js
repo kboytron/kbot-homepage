@@ -59,20 +59,17 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="[Link to source code]">
-            [Link to source code] <ExternalLinkIcon mx="2px" />
+          <Link href="https://github.com/kboytron/ASR_AI">
+            Github <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
 
       <Center my={6}>
-        <WorkImage src="/images/works/asr_overview.png" alt="ASR System Overview" />
+        <WorkImage src="/images/works/asr_nn.webp" alt="ASR System Overview" />
       </Center>
       <Center my={6}>
-        <WorkImage src="/images/works/alignment_viz.png" alt="Token Alignment Visualization" />
-      </Center>
-      <Center my={6}>
-        <WorkImage src="/images/works/training_curve.png" alt="Training Progress" />
+        <WorkImage src="/images/works/cer.webp" alt="Token Alignment Visualization" />
       </Center>
     </Container>
   </Layout>

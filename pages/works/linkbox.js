@@ -45,7 +45,7 @@ const Work = () => (
       </List>
 
       <Center my={6}>
-        <WorkImage src="/images/works/linkbox.png" alt="linkbox" />
+        <WorkImage src="/images/works/linkbox.webp" alt="linkbox" />
       </Center>
     </Container>
   </Layout>
