@@ -13,7 +13,7 @@ const Coin = () => {
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
   const urlCoinGLB = process.env.NODE_ENV === 'production' 
-    ? 'https://d3hndibbbri2s5.cloudfront.net  ' 
+    ? 'https://d3hndibbbri2s5.cloudfront.net/coin.glb' 
     : '/coin.glb'
 
   const handleWindowResize = useCallback(() => {
