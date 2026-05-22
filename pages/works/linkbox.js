@@ -1,12 +1,9 @@
-/* eslint-disable no-unused-vars */
 import {
   Container,
   Badge,
   Link,
   List,
   ListItem,
-  UnorderedList,
-  Heading,
   Center
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'

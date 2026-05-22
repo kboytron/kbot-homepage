@@ -1,6 +1,12 @@
 {
   "root": true,
-  "extends": "next",
+  "extends": [
+    "next",
+    "plugin:sonarjs/recommended-legacy"
+  ],
+  "plugins": [
+    "sonarjs"
+  ],
   "rules": {
     "no-unused-vars": [
       "error",
@@ -9,6 +15,16 @@
         "varsIgnorePattern": "^_"
       }
     ],
-    "react/display-name": 0
+    "react/display-name": 0,
+    "sonarjs/cognitive-complexity": [
+      "warn",
+      15
+    ],
+    "sonarjs/no-duplicate-string": [
+      "warn",
+      {
+        "threshold": 5
+      }
+    ]
   }
 }

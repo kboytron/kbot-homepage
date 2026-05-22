@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import PropTypes from 'prop-types'
 import { chakra, shouldForwardProp } from '@chakra-ui/react'
 
 const StyledDiv = chakra(motion.div, {
@@ -17,5 +18,10 @@ const Section = ({ children, delay = 0 }) => (
     {children}
   </StyledDiv>
 )
+
+Section.propTypes = {
+  children: PropTypes.node.isRequired,
+  delay: PropTypes.number,
+}
 
 export default Section

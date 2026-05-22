@@ -1,4 +1,5 @@
 import NextLink from 'next/link'
+import PropTypes from 'prop-types'
 import { Heading, Box, Image, Link, Badge } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
@@ -26,3 +27,16 @@ export const Meta = ({ children }) => (
     {children}
   </Badge>
 )
+
+Title.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+WorkImage.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+}
+
+Meta.propTypes = {
+  children: PropTypes.node.isRequired,
+}

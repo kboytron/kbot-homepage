@@ -1,5 +1,6 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
+import PropTypes from 'prop-types'
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
@@ -13,7 +14,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
         placeholder="blur"
         loading="lazy"
       />
-      <LinkOverlay href={href} target="_blank">
+      <LinkOverlay href={href} target="_blank" rel="noopener noreferrer">
         <Text mt={2}>{title}</Text>
       </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
@@ -60,3 +61,18 @@ export const GridItemStyle = () => (
     `}
   />
 )
+
+GridItem.propTypes = {
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  thumbnail: PropTypes.object.isRequired,
+}
+
+WorkGridItem.propTypes = {
+  children: PropTypes.node.isRequired,
+  category: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  thumbnail: PropTypes.object.isRequired,
+}

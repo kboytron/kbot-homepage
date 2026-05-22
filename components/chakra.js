@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import {
   ChakraProvider,
   cookieStorageManagerSSR,
@@ -16,6 +17,11 @@ export default function Chakra({ cookies, children }) {
       {children}
     </ChakraProvider>
   )
+}
+
+Chakra.propTypes = {
+  cookies: PropTypes.string,
+  children: PropTypes.node.isRequired,
 }
 
 export async function getServerSideProps({ req }) {

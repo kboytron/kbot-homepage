@@ -1,4 +1,5 @@
 import { forwardRef } from 'react'
+import PropTypes from 'prop-types'
 import Logo from './logo'
 import NextLink from 'next/link'
 import {
@@ -85,6 +86,7 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/kboytron/kbot-homepage"
             path={path}
             display="inline-flex"
@@ -131,6 +133,22 @@ const Navbar = props => {
       </Container>
     </Box>
   )
+}
+
+LinkItem.propTypes = {
+  href: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
+  target: PropTypes.string,
+  children: PropTypes.node.isRequired,
+}
+
+MenuLink.displayName = 'MenuLink'
+MenuLink.propTypes = {
+  href: PropTypes.string.isRequired,
+}
+
+Navbar.propTypes = {
+  path: PropTypes.string.isRequired,
 }
 
 export default Navbar

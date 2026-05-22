@@ -1,4 +1,5 @@
 import { forwardRef } from 'react'
+import PropTypes from 'prop-types'
 import { Box, Spinner } from '@chakra-ui/react'
 
 export const CoinSpinner = () => (
@@ -26,6 +27,11 @@ export const CoinContainer = forwardRef(({ children }, ref) => (
     {children}
   </Box>
 ))
+
+CoinContainer.displayName = 'CoinContainer'
+CoinContainer.propTypes = {
+  children: PropTypes.node.isRequired,
+}
 
 const Loader = () => {
   return (

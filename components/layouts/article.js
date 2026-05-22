@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
+import PropTypes from 'prop-types'
 import { GridItemStyle } from '../grid-item'
 
 const variants = {
@@ -33,6 +34,11 @@ const Layout = ({ children, title }) => {
       </>
     </motion.article>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string,
 }
 
 export default Layout

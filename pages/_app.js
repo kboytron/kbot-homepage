@@ -4,12 +4,20 @@ import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import PropTypes from 'prop-types'
 
-if (typeof window !== 'undefined') {
-  window.history.scrollRestoration = 'manual'
+if (globalThis.window !== undefined) {
+  globalThis.window.history.scrollRestoration = 'manual'
 }
 
-function Website({ Component, pageProps, router }) {
+const handleExitComplete = () => {
+  if (globalThis.window !== undefined) {
+    globalThis.window.scrollTo({ top: 0 })
+  }
+}
+
+const Website = ({ Component, pageProps, router }) => {
+
   return (
     <Chakra cookies={pageProps.cookies}>
       <Fonts />
@@ -17,11 +25,7 @@ function Website({ Component, pageProps, router }) {
         <AnimatePresence
           mode="wait"
           initial={true}
-          onExitComplete={() => {
-            if (typeof window !== 'undefined') {
-              window.scrollTo({ top: 0 })
-            }
-          }}
+          onExitComplete={handleExitComplete}
         >
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
@@ -30,6 +34,12 @@ function Website({ Component, pageProps, router }) {
       </Layout>
     </Chakra>
   )
+}
+
+Website.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object.isRequired,
+  router: PropTypes.object.isRequired,
 }
 
 export default Website

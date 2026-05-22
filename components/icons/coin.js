@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const CoinIcon = props => {
   return (
     <svg
@@ -17,6 +19,10 @@ const CoinIcon = props => {
       />
     </svg>
   )
+}
+
+CoinIcon.propTypes = {
+  className: PropTypes.string,
 }
 
 export default CoinIcon

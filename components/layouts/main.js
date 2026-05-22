@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import PropTypes from 'prop-types'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
@@ -42,6 +43,13 @@ const Main = ({ children, router }) => {
       </Container>
     </Box>
   )
+}
+
+Main.propTypes = {
+  children: PropTypes.node.isRequired,
+  router: PropTypes.shape({
+    asPath: PropTypes.string.isRequired,
+  }).isRequired,
 }
 
 export default Main

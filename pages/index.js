@@ -118,7 +118,7 @@ const Home = () => (
 
             return (
               <ListItem key={link.href}>
-                <Link href={link.href} target="_blank">
+                <Link href={link.href} target="_blank" rel="noopener noreferrer">
                   <Button variant="ghost" colorScheme="teal" leftIcon={<Icon />}>
                     {link.handle}
                   </Button>
